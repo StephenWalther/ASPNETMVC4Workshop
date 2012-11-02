@@ -1,0 +1,16 @@
+﻿<script>
+
+
+    function format(formatString) {
+        for (var i = 1; i < arguments.length; i++) {
+            formatString = formatString.replace("{" + (i - 1) + "}", arguments[i]);
+            console.log("{" + (i - 1) + "}");
+        }
+        return formatString;
+    }
+
+
+    console.log(format("He ate a {0} cheeseburger for {1} dollars", "cheese", 2.33));
+
+
+</script>

@@ -1,0 +1,16 @@
+﻿<script>
+
+    // Call wait5Seconds function
+    wait5Seconds(function (result) {
+        console.log(result.toString());
+    });
+
+    // Waits 5 seconds and returns the time
+    function wait5Seconds(callback) {
+        window.setTimeout(function () {
+            callback(Date());
+        }, 5 * 1000);
+    }
+
+
+</script>

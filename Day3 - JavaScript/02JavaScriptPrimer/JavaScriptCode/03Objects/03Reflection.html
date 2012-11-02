@@ -1,0 +1,19 @@
+﻿<script>
+
+    var customer = {
+        firstName: "Fred",
+        lastName: "Flintstone",
+        displayFullName: function () {
+            console.log(this.firstName + " " + this.lastName);
+        }
+    };
+
+    // Reflection
+    for (var key in customer) {
+        console.log(key + "=" + customer[key]);
+    }
+
+
+
+
+</script>

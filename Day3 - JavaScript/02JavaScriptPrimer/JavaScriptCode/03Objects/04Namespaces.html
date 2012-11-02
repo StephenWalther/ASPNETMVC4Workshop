@@ -1,0 +1,23 @@
+﻿<script>
+
+    // CompanyA Namespace
+    window.CompanyA = window.MyCompany || {};
+    window.CompanyA.doSomething = function () {
+        console.log("Something A");
+    };
+
+    // CompanyB Namespace
+    window.CompanyB = {
+        doSomething: function () {
+            console.log("Something B");
+        },
+        doSomethingElse: function () {
+            console.log("Else B");
+        }
+    };
+
+    CompanyA.doSomething(); // logs "Something A"
+    CompanyB.doSomething(); // logs "Something B"
+
+
+</script>

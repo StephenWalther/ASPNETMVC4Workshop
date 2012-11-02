@@ -1,0 +1,18 @@
+﻿<script>
+
+    doSomething(); // Logs "Something"
+    doSomethingElse(); // Throws ReferenceError
+
+    function doSomething() {
+        console.log("Something");
+    }
+
+    var doSomethingElse = function () {
+        console.log("Else");
+    };
+
+    doSomethingElse();  // Logs "Else"
+
+
+
+</script>
