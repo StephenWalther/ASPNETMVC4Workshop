@@ -1,0 +1,22 @@
+﻿<script>
+
+    var product = {
+        name: "Milk",
+        set price(value) {
+            if (value < 1) {
+                throw new Error("Invalid price");
+            };
+            this._price = value;
+        },
+        get price() {
+            return this._price;
+        }
+    };
+
+
+    product.price = 0; // Throws "Invalid price"
+
+
+
+
+</script>

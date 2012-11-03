@@ -1,0 +1,17 @@
+﻿<script>
+
+    function Product(name, price) {
+        this.name = name;
+        this.price = price;
+        this.displayPrice = function () {
+            console.log(this.price);
+        };
+    }
+
+    var product1 = new Product("Milk", 2.99);
+    product1.displayPrice(); // logs 2.99
+
+
+
+
+</script>

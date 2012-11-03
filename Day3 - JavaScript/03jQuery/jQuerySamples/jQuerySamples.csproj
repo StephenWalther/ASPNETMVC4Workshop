@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5484E11A-CEE4-4BB7-8909-3656DB0C90E7}</ProjectGuid>
+    <ProjectGuid>{F77A6020-A732-42C6-840A-D993F8E96F44}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JavaScriptCode</RootNamespace>
-    <AssemblyName>JavaScriptCode</AssemblyName>
+    <RootNamespace>jQuerySamples</RootNamespace>
+    <AssemblyName>jQuerySamples</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -57,32 +57,26 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="01Variables\01GlobalVars.html" />
-    <Content Include="01Variables\02Hoisting.html" />
-    <Content Include="01Variables\03LooseTyped.html" />
-    <Content Include="01Variables\04DefaultValues.html" />
-    <Content Include="01Variables\05StrictTyping.html" />
-    <Content Include="02Functions\01DefineFunctions.html" />
-    <Content Include="02Functions\02AnonymousFunctions.html" />
-    <Content Include="02Functions\03OptionalParams.html" />
-    <Content Include="02Functions\04LabStringFormat.html" />
-    <Content Include="02Functions\05Closures.html" />
-    <Content Include="02Functions\06CurriedFunctions.html" />
-    <Content Include="02Functions\07ModulePattern.html" />
-    <Content Include="03Objects\01Hashes.html" />
-    <Content Include="03Objects\02Methods.html" />
-    <Content Include="03Objects\03Reflection.html" />
-    <Content Include="03Objects\04Namespaces.html" />
-    <Content Include="03Objects\05Constructor.html" />
-    <Content Include="03Objects\06Inheritance.html" />
-    <Content Include="04ECMAScript5\01Strict.html" />
-    <Content Include="04ECMAScript5\02GettersSetters.html" />
-    <Content Include="04ECMAScript5\03DefineProperty.html" />
-    <Content Include="04ECMAScript5\04Inheritance.html" />
-    <Content Include="Test.html" />
+    <Content Include="01SelectorsBasic.html" />
+    <Content Include="02EventsBasic.html" />
+    <Content Include="03EventsFocus.html" />
+    <Content Include="04EventsChange.html" />
+    <Content Include="05EventsObject.html" />
+    <Content Include="06EventsReady.html" />
+    <Content Include="07EventsLive.html" />
+    <Content Include="08Animations.html" />
+    <Content Include="Images\Jellyfish.jpg" />
+    <Content Include="packages.config" />
+    <Content Include="Images\JellyFish.ashx" />
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Images\JellyFish.ashx.cs">
+      <DependentUpon>JellyFish.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -93,7 +87,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -109,7 +102,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:52122/</IISUrl>
+          <IISUrl>http://localhost:54846/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
