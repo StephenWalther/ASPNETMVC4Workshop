@@ -1,4 +1,0 @@
-﻿1. Install-Package AutoMapper in both Presentation and Service Layers
-2. Create AutoMapperProfile in Service layer
-3. Create AutoMapperConfig.cs in Presentation App_Start folder
-4. Call AutoMapperConfig.Start() method from Global.asax
