@@ -14,6 +14,12 @@ namespace Bundling {
                 "~/App_Scripts/A.js",
                 "~/Scripts/jQuery-{version}.js"
             ));
+
+
+            // control ordering
+            //bundles.FileSetOrderList.Clear();
+
+
         }
 
     }
