@@ -20,6 +20,8 @@ namespace MvcApplication1.Controllers
 
 
         public ActionResult Index() {
+
+
             var movies = (from m in _repository.Query<Movie>() select m).ToList();
             return View(movies);
         }
